@@ -1,0 +1,12 @@
+.notes-list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.note-title,
+.note-body,
+.note-link {
+    text-align:center;
+    display: block;
+}
