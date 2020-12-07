@@ -24,3 +24,4 @@ To start the front-end server:
 cd client
 npm start
 ```
+Once the front-end and the back-end servers are up, you should be able to access the app at http://localhost:3000.
