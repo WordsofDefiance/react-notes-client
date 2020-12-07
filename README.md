@@ -6,7 +6,7 @@ Pretty straightforward -- clone, initialize the submodules, install the node mod
 
 ```
 git clone https://github.com/WordsofDefiance/react-notes.git
-git submodule init
+git submodule init && git submodule update
 cd client && npm install && cd ../
 cd server && npm install && cd ../
 ```
