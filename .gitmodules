@@ -1,0 +1,6 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/WordsofDefiance/react-notes-server
+[submodule "client"]
+	path = client
+	url = https://github.com/WordsofDefiance/react-notes-client
