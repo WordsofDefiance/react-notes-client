@@ -6,7 +6,7 @@ export const NotesList = ({notes}) => (
     <>
     <div className='notes-list'>
         {notes.map(note => (
-            <Note key={note.ID} note={note}></Note>
+            <Note key={note.id} note={note}></Note>
         ))}
     </div>
     </>

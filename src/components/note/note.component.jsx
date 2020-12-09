@@ -7,7 +7,7 @@ export const Note = ({note}) => {
         <div className='note-single'>
             <h3 className='note-title'>{note.title}</h3>
             <p className='note-body'>{note.body}</p>
-            <Link className='note-link' to={`/${note.ID}`}>View Detail</Link>
+            <Link className='note-link' to={`/${note.id}`}>View Detail</Link>
         </div>
     )
 }

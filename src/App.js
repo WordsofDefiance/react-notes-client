@@ -36,14 +36,17 @@ class App extends Component {
   render() {
     return(
       <div className="app">
-        {/* <HomePage allNotes={this.state.allNotes}></HomePage> */}
         <Router>
-          <Route exact path='/'>
-            <HomePage allNotes={this.state.allNotes}></HomePage>
-          </Route>
-          <Route path='/:id' component={NoteDetail} />
-          <Route path='/add_note' component={AddNote} />
+          <Switch>        
+            <Route exact path='/add_note' component={AddNote} />
+            <Route exact path='/:id' component={NoteDetail} />
+            <Route exact path='/'>
+              <HomePage allNotes={this.state.allNotes}></HomePage>
+            </Route>
+          </Switch>
         </Router>
+
+
       </div>
     )
   };

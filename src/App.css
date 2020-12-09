@@ -32,6 +32,12 @@
   color: #61dafb;
 }
 
+body {
+  background: -webkit-linear-gradient(to left,#42c493,#dfd18e);
+  background: linear-gradient(to left,#42c493,#dfd18e); 
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
