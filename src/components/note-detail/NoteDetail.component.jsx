@@ -24,6 +24,8 @@ const NoteDetail = (props) => {
         <>
             <h2>{data.title}</h2>
             <p>{data.body}</p>
+            <Link to={'/edit_note/' + id}>Edit</Link>
+            <br></br>
             <Link to='/'>Back</Link>
         </>
         }

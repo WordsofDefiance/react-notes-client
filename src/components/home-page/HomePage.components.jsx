@@ -7,7 +7,7 @@ import { Button } from '../button/Button.component'
 export const HomePage = ({allNotes}) => (
     <>
     <Hero>Nifty Notes App</Hero>
-    <Link style={{'text-align': 'center', 'display': 'block'}} to='/add_note'><Button classes="add-note">Add Note</Button></Link>
+    <Link style={{'textAlign': 'center', 'display': 'block'}} to='/add_note'><Button classes="add-note">Add Note</Button></Link>
     <NotesList notes={allNotes}></NotesList>
     </>
 )

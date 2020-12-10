@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { StatusBox } from '../status-box/status-box.component'
 import './add-note.styles.css'
 import { Button } from '../button/Button.component'

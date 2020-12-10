@@ -1,4 +1,4 @@
-.add-note {
+.ui-button {
     color: blue;
     font-size: 14px;
     padding: 15px 40px;
@@ -10,7 +10,7 @@
     transition:0.3s;
 }
 
-.add-note:hover {
+.ui-button:hover {
     background-color: black;
     color: white;
     cursor: pointer;

@@ -1,21 +1,11 @@
-import React, { Component, useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
-import Hero from './components/hero/Hero.component';
-import { NotesList } from './components/notes-list/NotesList.component';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage } from './components/home-page/HomePage.components';
-import { Note } from './components/note/note.component'
 import { AddNote } from './components/add-note/AddNote.component'
 import NoteDetail from './components/note-detail/NoteDetail.component'
+import EditNote from './components/edit-note/EditNote.component'
 
 import './App.css';
-
-function Child(props) {
-  console.log(props)
-  let {id} = useParams()
-  fetch('api/single_note/1')
-    .then(result => result.json())
-  return <h3>{id}</h3>
-}
 
 class App extends Component {
   constructor() {
@@ -38,6 +28,7 @@ class App extends Component {
       <div className="app">
         <Router>
           <Switch>        
+            <Route exact path='/edit_note/:id' component={EditNote} />
             <Route exact path='/add_note' component={AddNote} />
             <Route exact path='/:id' component={NoteDetail} />
             <Route exact path='/'>
