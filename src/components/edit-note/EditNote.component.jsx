@@ -45,7 +45,7 @@ const EditNote = (props) => {
             console.log(this)
             setStatusText('Updated Successfully!!')
             setTimeout( () => {                       
-                // window.location.href = `/${id}`
+                window.location.href = `/${id}`
                 setData({title: editTitle, body: editBody})
             }, 500)
         });
