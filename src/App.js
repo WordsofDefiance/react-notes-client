@@ -4,6 +4,7 @@ import { HomePage } from './components/home-page/HomePage.components';
 import { AddNote } from './components/add-note/AddNote.component'
 import NoteDetail from './components/note-detail/NoteDetail.component'
 import EditNote from './components/edit-note/EditNote.component'
+import Counter from './components/counter/counter.component'
 
 import './App.css';
 
@@ -12,7 +13,8 @@ class App extends Component {
     super()
     this.state = {
       allNotes: [],
-      singleNote: ''
+      singleNote: '',
+      counterValue: 0,
     };
   }
 
@@ -30,6 +32,7 @@ class App extends Component {
           <Switch>        
             <Route exact path='/edit_note/:id' component={EditNote} />
             <Route exact path='/add_note' component={AddNote} />
+            <Route exact path='/counter' component={Counter} />
             <Route exact path='/:id' component={NoteDetail} />
             <Route exact path='/'>
               <HomePage allNotes={this.state.allNotes}></HomePage>
