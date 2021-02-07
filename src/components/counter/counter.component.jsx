@@ -50,6 +50,8 @@ class Counter extends React.Component {
     return (
         <>
         <h1>Hello</h1>
+        <p>The purpose of this page was to figure out how to persist data between pages of a react app.</p>
+        <p>My solution is to store the counter value in a database, so leaving the page doesn't reset the value.</p>
         <h3>Counter value is: {this.state.value}</h3>
         <Button onClick={this.addOne}>Add one to counter</Button>
         <Button onClick={this.subtractOne}>Subtract one from counter</Button>
